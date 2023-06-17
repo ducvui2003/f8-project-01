@@ -103,9 +103,6 @@ a {
   height: calc(100vh - 90px);
   background-color: #e6f0ff;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .hero-wrap .info {

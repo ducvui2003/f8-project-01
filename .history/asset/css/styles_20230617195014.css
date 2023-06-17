@@ -103,15 +103,12 @@ a {
   height: calc(100vh - 90px);
   background-color: #e6f0ff;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-.hero-wrap .info {
+.hero .info {
   width: 51%;
 }
-.hero-wrap .sub-title {
+.hero .sub-title {
   font-style: normal;
   font-weight: 500;
   font-size: 1.8rem;
@@ -120,7 +117,7 @@ a {
   color: #687690;
 }
 
-.hero-wrap .title {
+.hero .title {
   font-style: normal;
   font-weight: 700;
   font-size: 6.2rem;
@@ -128,7 +125,7 @@ a {
   margin-top: 8px;
   margin-bottom: 30px;
 }
-.hero-wrap .desc {
+.hero .desc {
   font-style: normal;
   font-weight: 400;
   font-size: 1.8rem;
@@ -137,12 +134,12 @@ a {
 
   color: #5a6473;
 }
-.hero-wrap .hero-cta {
+.hero-cta {
   margin-top: 40px;
   padding: 15px 37px;
   min-width: 170px;
 }
-.hero-wrap .hero-img {
+.hero-img {
   position: absolute;
   right: calc((100vw - 1100px) / 2 - 100px);
   bottom: 0;
