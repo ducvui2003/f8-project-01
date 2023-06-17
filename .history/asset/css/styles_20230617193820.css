@@ -8,10 +8,6 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins";
 }
-html,
-body {
-  scroll-behavior: smooth;
-}
 :root {
   --primary-color: #0f1b4c;
 }
