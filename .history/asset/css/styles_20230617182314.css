@@ -54,14 +54,17 @@ main {
   height: 2000px;
 }
 /* Header */
-
+.header {
+  height: 100vh;
+  background-color: #e6f0ff;
+  position: relative;
+}
 .header.fixed-header {
   height: auto;
   padding-top: 26px;
   position: sticky;
   top: -26px;
   z-index: 1;
-  background-color: #e6f0ff;
 }
 .header .nav {
   display: flex;
@@ -99,13 +102,8 @@ main {
 .header .nav .action-link {
   color: var(--primary-color);
 }
-.hero-wrap {
-  height: 100vh;
-  background-color: #e6f0ff;
-  position: relative;
-}
 .hero {
-  padding-top: 210px;
+  margin-top: 130px;
 }
 .hero .info {
   width: 51%;
