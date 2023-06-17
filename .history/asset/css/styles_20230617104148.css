@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins";
+}
+:root {
+  --primary-color: #0f1b4c;
+}
+/* Common */
+a {
+  text-decoration: none;
+}
+.content {
+  width: 1100px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.btn {
+  min-width: 98px;
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  padding: 10px 24px;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  display: inline-block;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+/* Main */
+main {
+  height: 2000px;
+}
+/* Header */
+.header {
+  height: 100vh;
+  background-color: #e6f0ff;
+  position: relative;
+}
+
+.header .nav {
+  display: flex;
+  align-items: center;
+  padding-top: 38px;
+}
+.header .nav ul {
+  margin-left: 50px;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .nav ul a {
+  color: #4f5361;
+  padding: 8px 14px;
+  /* Padding in tag inline block  */
+}
+.header .nav ul a:hover {
+  text-decoration: underline;
+}
+.header .nav a {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  border-radius: 8px;
+}
+.header .nav .actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+.header .nav .action-link {
+  color: var(--primary-color);
+}
+.hero {
+  margin-top: 130px;
+}
+.hero .info {
+  width: 51%;
+}
+.hero .sub-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+.hero .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.2rem;
+  line-height: 1.19;
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+.hero .desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.78;
+}
+.hero-cta {
+  margin-top: 40px;
+  padding: 15px 37px;
+  min-width: 170px;
+}
+.hero-img {
+  position: absolute;
+  right: calc((100vw - 1100px) / 2 - 100px);
+  bottom: 0;
+}
+/* Clients */
+.clients {
+  margin-top: 122px;
+}
+.clients .content {
+}
+.clients .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clients desc {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  color: #7d8589;
+}
+.clients .row-desc {
+  margin-top: 23px;
+}
+.clients .images {
+  margin-top: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients .images .image-highlight {
+  padding: 30px 40px 22px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+/* Guides */
+.guides {
+  margin-top: 200px;
+  display: flex;
+}
+.guides .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.guides .sub-title {
+  position: relative;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 1;
+
+  text-align: center;
+  color: #000339;
+}
+.guides .sub-title::before {
+  content: "";
+
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #000339;
+  border-radius: 12px;
+}
+.guides .desc {
+  width: 460px;
+  max-width: 100%;
+  margin: 20px auto 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.88;
+  text-align: center;
+
+  color: #5a6473;
+}
+.list-guide {
+  display: flex;
+  justify-content: space-between;
+  gap: 140px;
+  margin-block: 70px 48px;
+}
+.list-guide .guide-item {
+  text-align: center;
+}
+.guide-item .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.1;
+  text-align: center;
+
+  margin-block: 26px 10px;
+
+  color: #3b3c45;
+}
+.guide-item .link {
+  display: flex;
+  align-items: center;
+}
+.guide-item .link span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-align: center;
+
+  color: #0689ff;
+}
+.guide-item .link img {
+  color: #0689ff;
+  margin-left: 8px;
+}
+.guides .guide-cta .btn {
+  min-width: 170px;
+}
+/* Features */
+.features {
+  margin-top: 120px;
+  background: #f5fafe;
+}
+.features header {
+  padding-top: 110px 0;
+}
+.features .sub-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 1;
+
+  color: #000339;
+}
+.features .row {
+  display: flex;
+  justify-content: space-between;
+}
+.features .desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.88;
+  color: #5a6473;
+}
+.features .link {
+  display: flex;
+  align-items: center;
+}
+.features .link span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.5;
+
+  color: #0689ff;
+}
+.features .link img {
+  margin-left: 8px;
+}
+.list-feature {
+  margin-top: 68px;
+  display: flex;
+  gap: 30px;
+}
+.list-feature .feature-item {
+  flex: 1;
+  --border-radius: 12px;
+  border-radius: var(--border-radius);
+  background-color: white;
+}
+.feature-item .thumbnail {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+}
+.feature-item .title a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1;
+  color: #000339;
+}
+.feature-item .desc {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #a3a6ab;
+  margin-block: 11px 21px;
+
+  --line-clamp: 3;
+  word-break: break-all;
+}
+.feature-item .body {
+  padding: 20px 17px 38px 22px;
+  border-bottom-right-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+.feature-item .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feature-item .icon {
+  margin-left: 22px;
+}
+.feature-item .icon:first-child {
+  margin-left: 0;
+}
+.feature-item .label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: #4d4d52;
+  margin-right: 8px;
+}
